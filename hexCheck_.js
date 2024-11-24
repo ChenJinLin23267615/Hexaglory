@@ -1,0 +1,5 @@
+function hexCheck() {
+	push();
+
+	pop();
+}

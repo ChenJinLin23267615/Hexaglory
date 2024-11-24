@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hexaglory</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+  <script src="libraries/p5.shape.js"></script>
+  <script src="libraries/p5.clickable.js"></script>
+  <script src="libraries/p5.play.js"></script>
+  <script src="libraries/p5.bezier.min.js"></script>
+  <script src="libraries/quicksettings.js"></script>
+  <script src="libraries/p5.gui.js"></script>
+  </head>
+
+<!--Live Preview: Show Preview (Internal Browser)-->
+
+<body>
+  <article>
+    <a>
+      This is a trial version with functions not completed (press [F] to open debug mode)<br> 
+      This game controls by keyboard and mouse.<br>
+      Rules: 
+      <blockquote>
+        0. Press [SPACE] to switch to next step. If in debug mode, press [>] and [<] to move forward and backward<br>
+        1. In the first year (turn), every player assign one house two roads as launching territory.<br>
+        2. Player could just click on the nodes or links on the map to enter building system.
+        <blockquote>
+          Except for the first building, every house or road need to be constucted beside previous buildings.<br>
+          There must be at least one space between every two houses.<br>
+          If the link or node has been occupied by other player, you can not build anything on them unless you destroy them with special card. (haven't code yet)<br>
+        </blockquote>
+        <blockquote>
+          When it's in debug mode (for no formal method of getting destory card), press [D] to open destory mode<br>
+          You can select any building one the map to destory. You can also slide to change the type of destorying, for resource give back or not.
+        </blockquote>
+        3. From the second year (turn), each player need to give 2d6 in reality and type the result. ("1" to 1 & "+" to 12) This would judge the resource producing each time.<br>
+        4. After dicing, player could choose to build more houses or roads if the resource is enough.<br>
+        <blockquote>
+          2 crop & 2 wood for house<br>
+          1 wood & 1 iron for road<br>
+          2 wood & 3 iron & 2 fuel for house upgrade
+        </blockquote>
+        5. Every player can exchange resource with other player or with central system at anytime.<br>
+        <blockquote>
+          Press [E] to open exchange mode.<br>
+          If exchange with system, the rate is 4 deliver resource : 1 assigned resource.<br>
+          If exchange with system and is currently in debug mode, there's no constrain (infinite resource).
+        </blockquote>
+        6. If the result of 2d6 is 7, it would automatically goes to event mode (not finish yet).
+        <blockquote>
+          Press [C] to start the turntable.<br>
+          Each block of turntable refers to a special event. (haven't code yet)
+        </blockquote>
+        7. The game would count the flourish point and be finished when one of players reached 10 points in real time. (not finish yet)
+        <blockquote>
+          house = 1 pt / house Lv2 = 2 pt / most roads = 2 pt / most army = 2 pt (haven't code yet) / flourish card = 1 pt (haven't code yet)<br>
+        </blockquote>
+        8. Card system (haven't code yet)<br>
+        9. Army system (haven't code yet)
+      </blockquote>
+
+    </a>
+  </article>
+	<script src="hexBasic_.js"></script>
+  <script src="hexMap_.js"></script>
+  <script src="hexModel_.js"></script>
+  <script src="hexUI_.js"></script>
+  <script src="hexItem_.js"></script>
+  <script src="hexTurn_.js"></script>
+  <script src="hexInput_.js"></script>
+  <script src="hexSelect_.js"></script>
+  <script src="hexCheck_.js"></script>
+  <script src="hexConstruct_.js"></script>
+  <script src="hexDestroy_.js"></script>
+  <script src="hexDice_.js"></script>
+  <script src="hexExchange_.js"></script>
+  <script src="hexFlourish_.js"></script>
+  <script src="hex7_.js"></script>
+  <script src="hexCard_.js"></script>
+  <script src="hexDebug_.js"></script>
+  <script src="hexMode_.js"></script>
+  <script src="hexEgg_.js"></script>
+</body>
+
+</html>
